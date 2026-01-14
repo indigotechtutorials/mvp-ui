@@ -1,0 +1,10 @@
+:root {
+  --mvp-ui-black: hsl(0, 0%, 0%);
+  --mvp-ui-white: hsl(0, 0%, 100%);
+  --mvp-ui-primary: hsl(232, 63%, 48%);
+  --mvp-ui-secondary: hsl(142, 71%, 17%);
+  --mvp-ui-red: hsl(0, 100%, 50%);
+  --mvp-ui-green: hsl(121, 100%, 50%);
+
+  --mvp-ui-navbar-height: 80px;
+}

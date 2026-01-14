@@ -1,0 +1,42 @@
+.button, .dark-button, .primary-button, .secondary-button, .danger-button {
+  font-size: 20px;
+  padding: 6px 10px 6px 10px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: transform 250ms ease-in;
+  border: 1px solid var(--mvp-ui-black);
+  color: var(--mvp-ui-black);
+  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.button:hover, .dark-button:hover, .primary-button:hover, .secondary-button:hover,
+  .danger-button:hover {
+  transform: scale(1.05);
+}
+
+.button:focus, .dark-button:focus, .primary-button:focus, .secondary-button:focus,
+  .danger-button:focus {
+  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.2);
+  border: 1px solid var(--mvp-ui-primary);
+  outline: none;
+}
+
+.dark-button {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(0, 0%, 0%);
+}
+
+.primary-button {
+  color: var(--mvp-ui-white);
+  background-color: var(--mvp-ui-primary);
+}
+
+.secondary-button {
+  color: var(--mvp-ui-white);
+  background-color: var(--mvp-ui-secondary);
+}
+
+.danger-button {
+  color: var(--mvp-ui-white);
+  background-color: var(--mvp-ui-red);
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MVP UI</title>
+  <link rel="stylesheet" type="text/css" href="/index.css">
+  <link rel="stylesheet" type="text/css" href="/mvp-ui.css">
+  <link rel="stylesheet" type="text/css" href="/utils.css">
+  <link rel="stylesheet" type="text/css" href="/button_components/index.css">
+  <link rel="stylesheet" type="text/css" href="/badge_components/index.css">
+  <link rel="stylesheet" type="text/css" href="/card_components/index.css">
+  <link rel="stylesheet" type="text/css" href="/alert_components/index.css">
+  <link rel="stylesheet" type="text/css" href="/modal_components/index.css">
+  <link rel="icon" type="image/x-icon" href="/mvpui.png">
+</head>
+<body>
+  <%= render "sidebar" %>
+  <%= render_component_area "button" %>
+  <%= render_component_area "badge" %>
+  <%= render_component_area "card" %>
+  <%= render_component_area "alert" %>
+  <%= render_component_area "modal" %>
+
+  <script src="/helpers.js"></script>
+</body>
+</html>

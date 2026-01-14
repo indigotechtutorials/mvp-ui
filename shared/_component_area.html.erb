@@ -1,0 +1,8 @@
+<div class="components-container">
+  <h3 class="component-header" id="<%= @component_name %>Section"> <%= @component_name.capitalize %> components </h3>
+  <p class="component-subheader"> prebuilt <%= @component_name %> components for your app </p>
+  <div class="component-v-container">
+    <%= render "#{@component_name}_components/#{@component_name}s" %>
+  </div>
+  <textarea class="component-code" readonly="true" style="height: 100px;"><%= render "#{@component_name}_components/#{@component_name}s" %></textarea>
+</div>

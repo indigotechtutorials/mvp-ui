@@ -1,0 +1,27 @@
+.badge, .dark-badge, .primary-badge, .secondary-badge, .danger-badge {
+  padding: 10px 6px 10px 6px;
+  border-radius: 24px;
+  color: var(--mvp-ui-black);
+  border: 1px solid var(--mvp-ui-black);
+  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.dark-badge {
+  background-color: var(--mvp-ui-black);
+  color: var(--mvp-ui-white);
+}
+
+.primary-badge {
+  background-color: var(--mvp-ui-primary);
+  color: var(--mvp-ui-white);
+}
+
+.secondary-badge {
+  background-color: var(--mvp-ui-secondary);
+  color: var(--mvp-ui-white);
+}
+
+.danger-badge {
+  background-color: var(--mvp-ui-red);
+  color: var(--mvp-ui-white);
+}

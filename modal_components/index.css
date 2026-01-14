@@ -1,0 +1,27 @@
+.modal {
+  max-height: 70vh;
+  max-width: 700px;
+  width: 100%;
+  padding: 32px;
+  border-radius: 8px;
+  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.2);
+  border: 1px solid var(--mvp-ui-black);
+
+  .modal-title {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  .modal-body {
+    min-height: 150px;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .modal-footer {
+    display: flex;
+    justify-content: space-between;
+  }
+}

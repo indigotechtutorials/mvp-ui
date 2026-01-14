@@ -1,0 +1,58 @@
+.alert, .danger-alert, .success-alert, .primary-alert, .secondary-alert {
+  position: fixed;
+  top: calc(var(--mvp-ui-navbar-height) - 20px);
+  right: 3rem;
+  color: var(--mvp-ui-black);
+  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.2);
+  border: 1px solid var(--mvp-ui-black);
+  padding: 8px 16px 8px 16px;
+  border-radius: 8px;
+  max-width: 500px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+
+  svg {
+    width: 24px;
+  }
+
+  .alert-body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Make all text after first one smaller in alert */
+  .alert-body span:not(:first-child) {
+    font-size: 16px;
+  }
+}
+
+.danger-alert {
+  border-color: var(--mvp-ui-red);
+  svg {
+    color: var(--mvp-ui-red);
+  }
+}
+
+.success-alert {
+  border-color: var(--mvp-ui-green);
+  svg {
+    color: var(--mvp-ui-green);
+  }
+}
+
+.primary-alert {
+  border-color: var(--mvp-ui-primary);
+  svg {
+    color: var(--mvp-ui-primary);
+  }
+}
+
+.secondary-alert {
+  border-color: var(--mvp-ui-secondary);
+  svg {
+    color: var(--mvp-ui-secondary);
+  }
+}
