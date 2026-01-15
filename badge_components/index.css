@@ -4,6 +4,7 @@
   color: var(--mvp-ui-black);
   border: 1px solid var(--mvp-ui-black);
   box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.2);
+  background-color: var(--mvp-ui-white);
 }
 
 .dark-badge {

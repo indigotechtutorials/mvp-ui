@@ -53,10 +53,13 @@
 }
 
 .component-code {
+  color: var(--mvp-ui-black);
+  background-color: hsl(from var(--mvp-ui-white) h s calc(l - 10));
   width: 100%;
   padding: 16px;
   margin-top: 2rem;
   resize: none;
+  border-radius: 8px;
 }
 
 .preview-sidebar {

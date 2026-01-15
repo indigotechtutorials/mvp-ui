@@ -1,0 +1,50 @@
+.form-container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0px auto 0px auto;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.field-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.field-v-container {
+  display: flex;
+  gap: 24px;
+}
+
+.label {
+  font-size: 20px;
+}
+
+.field {
+  font-size: 20px;
+  padding: 4px;
+  padding: 6px 10px 6px 10px;
+  border-radius: 8px;
+  border: 1px solid var(--mvp-ui-black);
+  color: var(--mvp-ui-black);
+  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.2);
+  width: 100%;
+}
+
+textarea.field {
+  min-height: 80px;
+  resize: vertical;
+}
+
+.form-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 16px;
+}

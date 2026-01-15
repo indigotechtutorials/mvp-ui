@@ -17,6 +17,10 @@ def render_component_area(component_name, **locals)
   render("shared/component_area")
 end
 
+def h(content)
+  ERB::Util.html_escape(content)
+end
+
 server = WEBrick::HTTPServer.new Port: 3000
 
 server.mount_proc "/" do |req, res|
@@ -30,7 +34,7 @@ asset_files = ["index.css", "mvp-ui.css", "helpers.js",
   "button_components/index.css", "badge_components/index.css",
   "card_components/index.css", "canyon.jpg", "alert_components/index.css",
   "mvpui.png", "modal_components/index.css", "navbar_components/index.css", 
-  "dropdown_components/index.css", "utils.css"]
+  "dropdown_components/index.css", "form_components/index.css", "utils.css"]
 
 asset_files.each do |path|
   server.mount_proc "/#{path}" do |req, res|

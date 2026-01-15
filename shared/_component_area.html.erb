@@ -4,5 +4,5 @@
   <div class="component-v-container">
     <%= render "#{@component_name}_components/#{@component_name}s" %>
   </div>
-  <textarea class="component-code" readonly="true" style="height: 100px;"><%= render "#{@component_name}_components/#{@component_name}s" %></textarea>
+  <pre class="component-code"><code><%= h(render "#{@component_name}_components/#{@component_name}s") %></code></pre>
 </div>
