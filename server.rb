@@ -2,7 +2,6 @@
 
 require "webrick"
 require "erb"
-require "pry"
 
 def render(path_to_file)
   file_name = path_to_file.split("/")[-1]
