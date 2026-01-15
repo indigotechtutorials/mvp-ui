@@ -30,7 +30,8 @@ end
 asset_files = ["index.css", "mvp-ui.css", "helpers.js",
   "button_components/index.css", "badge_components/index.css",
   "card_components/index.css", "canyon.jpg", "alert_components/index.css",
-  "mvpui.png", "modal_components/index.css", "dropdown_components/index.css", "utils.css"]
+  "mvpui.png", "modal_components/index.css", "navbar_components/index.css", 
+  "dropdown_components/index.css", "utils.css"]
 
 asset_files.each do |path|
   server.mount_proc "/#{path}" do |req, res|
