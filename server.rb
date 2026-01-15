@@ -30,6 +30,34 @@ server.mount_proc "/" do |req, res|
   res.body = template.result(binding)
 end
 
+server.mount_proc "/build-css-and-download" do |req, res|
+  included_css_files = [
+    "mvp-ui.css", 
+    "utils.css", 
+    "alert_components/index.css",
+    "badge_components/index.css",
+    "button_components/index.css",
+    "card_components/index.css",
+    "dropdown_components/index.css",
+    "form_components/index.css",
+    "modal_components/index.css",
+    "navbar_components/index.css",
+  ]
+
+  FileUtils.rm_rf("builds")
+  FileUtils.mkdir_p("builds")
+  output_css_file_path = File.join("builds", "mvp-ui.min.css")
+  File.open(output_css_file_path, "w") do |file|
+    included_css_files.each do |css_file|
+      css_content = File.read(css_file)
+      file.puts(css_content)
+      file.puts("")
+    end
+  end
+  res.content_type = "text/css"
+  res.body = File.read(output_css_file_path)
+end
+
 asset_files = ["index.css", "mvp-ui.css", "helpers.js",
   "button_components/index.css", "badge_components/index.css",
   "card_components/index.css", "canyon.jpg", "alert_components/index.css",

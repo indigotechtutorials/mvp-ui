@@ -85,6 +85,49 @@
   color: black;
 }
 
+.preview-navbar {
+  background-color: var(--mvp-ui-white);
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 60px;
+  width: 100%;
+  display: flex;
+  gap: 24px;
+  padding: 10px;
+
+  .github-link {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    padding: 8px;
+    text-decoration: none;
+
+    svg {
+      fill: var(--mvp-ui-black);
+      width: 32px;
+    }
+  }
+
+  .download-library {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    color: white;
+    padding: 8px;
+    text-decoration: none;
+    border-radius: 8px;
+    background: linear-gradient(to right, rgb(56, 10, 241), rgb(6, 207, 242));
+    
+    svg {
+      width: 18px;
+    }
+  }
+}
+
 /* Position elements inline for app */
 
 .alert, .danger-alert, .success-alert, .primary-alert, .secondary-alert {
