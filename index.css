@@ -39,9 +39,6 @@
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
-  div {
-    position: static;
-  }
 }
 
 .component-header {
@@ -82,6 +79,18 @@
 .preview-sidebar-link {
   font-size: 24px;
   color: black;
+}
+
+/* Position elements inline for app */
+
+.alert, .danger-alert, .success-alert, .primary-alert, .secondary-alert {
+  position: static !important;
+}
+
+/* Make dropdown container height cover size of open dropdown */
+
+.dropdown-container {
+  min-height: 300px;
 }
 
 /* Mobile responsive CSS */

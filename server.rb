@@ -10,10 +10,10 @@ def render(path_to_file)
   partial_path = File.join(File.dirname(__FILE__), path_pieces, "_#{file_name}.html.erb")
   page_content = File.read(partial_path)
   template = ERB.new(page_content)
-  template.result(binding)
+  template.result
 end
 
-def render_component_area(component_name)
+def render_component_area(component_name, **locals)
   @component_name = component_name
   render("shared/component_area")
 end
@@ -30,7 +30,7 @@ end
 asset_files = ["index.css", "mvp-ui.css", "helpers.js",
   "button_components/index.css", "badge_components/index.css",
   "card_components/index.css", "canyon.jpg", "alert_components/index.css",
-  "mvpui.png", "modal_components/index.css", "utils.css"]
+  "mvpui.png", "modal_components/index.css", "dropdown_components/index.css", "utils.css"]
 
 asset_files.each do |path|
   server.mount_proc "/#{path}" do |req, res|
